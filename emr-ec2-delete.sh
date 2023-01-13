@@ -17,7 +17,7 @@ EMR_CLUSTER_STATE=$(aws emr describe-cluster \
   --region $AWS_REGION \
   --cluster-id $EMR_CLUSTER_ID \
   --query=Cluster.Status.State --output=text)
-echo "Is $EMR_CLUSTER_NAME $EMR_CLUSTER_ID ready? $EMR_CLUSTER_STATE"
+echo "Is $EMR_CLUSTER_NAME $EMR_CLUSTER_ID terminated? $EMR_CLUSTER_STATE"
 
 
 
