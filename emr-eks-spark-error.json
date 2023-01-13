@@ -1,0 +1,34 @@
+[
+    {
+        "id": "000000031brrstui9dk",
+        "name": "spark-python-wordcount-4408",
+        "virtualClusterId": "wn2usiirx97ff62ybfgncv8u0",
+        "arn": "arn:aws:emr-containers:us-east-1:649088000912:/virtualclusters/wn2usiirx97ff62ybfgncv8u0/jobruns/000000031brrstui9dk",
+        "state": "FAILED",
+        "clientToken": "f60d972d-c147-4303-a429-ce86850c3c26",
+        "executionRoleArn": "arn:aws:iam::649088000912:role/EMREKSRuntimeRole",
+        "releaseLabel": "emr-6.4.0-latest",
+        "createdAt": "2023-01-04T08:21:45+00:00",
+        "createdBy": "arn:aws:iam::649088000912:user/olivier",
+        "finishedAt": "2023-01-04T08:27:53+00:00",
+        "stateDetails": "Jobrun failed. Main Spark container terminated with errors. Last error seen in logs - Caused by: java.io.IOException: com.amazon.ws.emr.hadoop.fs.shaded.com.amazonaws.services.s3.model.AmazonS3Exception: Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: GTA1MNCFREWQ57H0; S3 Extended Request ID: n4NT3YxNWh+E3sgi3SlhsCv+MgDWImFlQDyOOJQjZ5tJObvLNODHfVgoTqUjoO+QKFLV4Yd3bc4=; Proxy: null), S3 Extended Request ID: n4NT3YxNWh+E3sgi3SlhsCv+MgDWImFlQDyOOJQjZ5tJObvLNODHfVgoTqUjoO+QKFLV4Yd3bc4=\nCaused by: com.amazon.ws.emr.hadoop.fs.shaded.com.amazonaws.services.s3.model.AmazonS3Exception: Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: GTA1MNCFREWQ57H0; S3 Extended Request ID: n4NT3YxNWh+E3sgi3SlhsCv+MgDWImFlQDyOOJQjZ5tJObvLNODHfVgoTqUjoO+QKFLV4Yd3bc4=; Proxy: null), S3 Extended Request ID: n4NT3YxNWh+E3sgi3SlhsCv+MgDWImFlQDyOOJQjZ5tJObvLNODHfVgoTqUjoO+QKFLV4Yd3bc4=. Please refer logs uploaded to S3/CloudWatch based on your monitoring configuration.",
+        "failureReason": "USER_ERROR",
+        "tags": {}
+    },
+    {
+        "id": "000000031bpm6g8eonb",
+        "name": "spark-python-wordcount-4408",
+        "virtualClusterId": "wn2usiirx97ff62ybfgncv8u0",
+        "arn": "arn:aws:emr-containers:us-east-1:649088000912:/virtualclusters/wn2usiirx97ff62ybfgncv8u0/jobruns/000000031bpm6g8eonb",
+        "state": "FAILED",
+        "clientToken": "5d809823-4bae-421b-a3e7-4f2da3007216",
+        "executionRoleArn": "arn:aws:iam::649088000912:role/EMREKSRuntimeRole",
+        "releaseLabel": "emr-6.8.0-latest",
+        "createdAt": "2023-01-03T22:12:42+00:00",
+        "createdBy": "arn:aws:iam::649088000912:user/olivier",
+        "finishedAt": "2023-01-03T22:19:51+00:00",
+        "stateDetails": "Jobrun failed. Main Spark container terminated with errors. Last error seen in logs - io.fabric8.kubernetes.client.KubernetesClientException: Failure executing: GET at: https://kubernetes.default.svc/api/v1/namespaces/emr/services?labelSelector=spark-app-selector%3Dspark-000000031bpm6g8eonb. Message: Forbidden!Configured service account doesn't have access. Service account may have been revoked. services is forbidden: User \"system:serviceaccount:emr:emr-containers-sa-spark-driver-649088000912-t6bulfkpohidqv9mtrgaw1x8x1\" cannot list resource \"services\" in API group \"\" in the namespace \"emr\".\nio.fabric8.kubernetes.client.KubernetesClientException: Failure executing: GET at: https://kubernetes.default.svc/api/v1/namespaces/emr/persistentvolumeclaims?labelSelector=spark-app-selector%3Dspark-000000031bpm6g8eonb. Message: Forbidden!Configured service account doesn't have access. Service account may have been revoked. persistentvolumeclaims is forbidden: User \"system:serviceaccount:emr:emr-containers-sa-spark-driver-649088000912-t6bulfkpohidqv9mtrgaw1x8x1\" cannot list resource \"persistentvolumeclaims\" in API group \"\" in the namespace \"emr\".. Please refer logs uploaded to S3/CloudWatch based on your monitoring configuration.",
+        "failureReason": "USER_ERROR",
+        "tags": {}
+    }
+]
