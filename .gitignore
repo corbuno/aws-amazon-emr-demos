@@ -1,0 +1,4 @@
+
+*.pem
+emr-eks-access-policy.json
+wordcount.py
