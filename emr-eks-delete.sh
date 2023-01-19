@@ -22,7 +22,7 @@ rm amazonreview.sql
 QUERY=virtualClusters[?name==\`$EMR_VIRTUAL_CLUSTER\`].id
 EMR_VIRTUAL_CLUSTER_ID=$(aws emr-containers list-virtual-clusters \
   --region $AWS_REGION \
-  --query $QUERY --output=text)
+  --query $QUERY --output=text | awk '{print $1;}')
 echo $EMR_VIRTUAL_CLUSTER_ID
 
 aws emr-containers delete-virtual-cluster \
