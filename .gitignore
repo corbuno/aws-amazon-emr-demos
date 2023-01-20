@@ -1,4 +1,5 @@
 
 *.pem
 emr-eks-access-policy.json
+emr-serverless-access-policy.json
 wordcount.py
