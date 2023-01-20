@@ -63,7 +63,7 @@ aws iam delete-policy \
 rm emr-eks-access-policy.json
 
 
-# eks cluster
+# eks cluster (once Fargate profile is deleted)
 
 eksctl delete cluster \
   --region $AWS_REGION \
